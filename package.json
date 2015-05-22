@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Here's my weather app!",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jade": "./node_modules/.bin/jade ./*.jade ./**/*.jade",
+    "sass": "./node_modules/.bin/node-sass main.scss main.css",
+    "build": "npm run jade; npm run sass",
+    "webserver": "./node_modules/.bin/hs -a localhost -o",
+    "start": "npm run build; npm run webserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calebgregory/weather-app"
+  },
+  "author": "Caleb Gregory <calebgregory@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calebgregory/weather-app/issues"
+  },
+  "homepage": "https://github.com/calebgregory/weather-app",
+  "devDependencies": {
+    "http-server": "^0.8.0",
+    "jade": "^1.9.2",
+    "node-sass": "^3.0.0"
+  }
+}
